@@ -10,17 +10,17 @@ const certs = [
 const CertificationsSection = () => {
   const ref = useReveal();
   return (
-    <section id="certifications" className="relative z-[1] min-h-screen px-6 md:px-20 py-24">
-      <div className="text-center mb-16">
+    <section id="certifications" className="relative z-[1] min-h-screen px-5 md:px-16 lg:px-20 py-20 md:py-24">
+      <div className="text-center mb-14">
         <span className="sec-tag">Credentials</span>
         <h2 className="sec-title">Certifications</h2>
         <div className="sec-line" />
       </div>
       <div ref={ref} className="reveal grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 max-w-[1000px] mx-auto">
         {certs.map((c) => (
-          <div key={c.title} className="card-dark p-6 flex flex-col gap-2.5">
+          <div key={c.title} className="card-dark p-5 md:p-6 flex flex-col gap-2.5">
             <span className="text-3xl">{c.icon}</span>
-            <h4 className="text-sm font-semibold">{c.title}</h4>
+            <h4 className="text-sm font-semibold font-heading">{c.title}</h4>
             <span className="text-xs text-primary">{c.org}</span>
             <small className="text-xs text-muted-foreground">{c.date}</small>
           </div>

@@ -9,21 +9,21 @@ const jobs = [
 const ExperienceSection = () => {
   const ref = useReveal();
   return (
-    <section id="experience" className="relative z-[1] min-h-screen px-6 md:px-20 py-24">
-      <div className="text-center mb-16">
+    <section id="experience" className="relative z-[1] min-h-screen px-5 md:px-16 lg:px-20 py-20 md:py-24">
+      <div className="text-center mb-14">
         <span className="sec-tag">Where I've Worked</span>
         <h2 className="sec-title">Experience</h2>
         <div className="sec-line" />
       </div>
-      <div ref={ref} className="reveal max-w-[800px] mx-auto flex flex-col gap-6">
+      <div ref={ref} className="reveal max-w-[800px] mx-auto flex flex-col gap-5">
         {jobs.map((job, i) => (
-          <div key={i} className="card-dark p-7 flex gap-6">
+          <div key={i} className="card-dark p-5 md:p-7 flex gap-4 md:gap-6">
             <div className="w-3 h-3 rounded-full bg-primary shrink-0 mt-1.5" style={{ boxShadow: "0 0 10px hsl(180,100%,42%)" }} />
             <div>
-              <h4 className="text-base font-bold mb-1">{job.title}</h4>
-              <p className="text-sm text-primary mb-1">{job.company}</p>
+              <h4 className="text-sm md:text-base font-bold mb-1 font-heading">{job.title}</h4>
+              <p className="text-xs md:text-sm text-primary mb-1">{job.company}</p>
               <p className="text-xs text-muted-foreground mb-3">{job.period}</p>
-              <p className="text-sm text-muted-foreground leading-[1.7]">{job.desc}</p>
+              <p className="text-xs md:text-sm text-muted-foreground leading-[1.7]">{job.desc}</p>
             </div>
           </div>
         ))}

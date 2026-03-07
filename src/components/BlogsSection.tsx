@@ -9,21 +9,21 @@ const blogs = [
 const BlogsSection = () => {
   const ref = useReveal();
   return (
-    <section id="blogs" className="relative z-[1] min-h-screen px-6 md:px-20 py-24 bg-dark">
-      <div className="text-center mb-16">
+    <section id="blogs" className="relative z-[1] min-h-screen px-5 md:px-16 lg:px-20 py-20 md:py-24 bg-dark">
+      <div className="text-center mb-14">
         <span className="sec-tag">My Thoughts</span>
         <h2 className="sec-title">Blogs</h2>
         <div className="sec-line" />
       </div>
-      <div ref={ref} className="reveal grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-[1000px] mx-auto">
+      <div ref={ref} className="reveal grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 max-w-[1000px] mx-auto">
         {blogs.map((b) => (
           <div key={b.title} className="card-dark overflow-hidden cursor-pointer">
-            <div className="h-[130px] flex items-center justify-center text-4xl border-b border-border" style={{ background: "linear-gradient(135deg, hsl(200,60%,7%), hsl(200,40%,10%))" }}>
+            <div className="h-28 md:h-[130px] flex items-center justify-center text-3xl md:text-4xl border-b border-border" style={{ background: "linear-gradient(135deg, hsl(200,60%,7%), hsl(200,40%,10%))" }}>
               {b.icon}
             </div>
             <div className="p-5">
               <p className="text-xs text-primary tracking-wide mb-2">{b.date}</p>
-              <h4 className="text-sm font-bold mb-2 leading-snug">{b.title}</h4>
+              <h4 className="text-sm font-bold mb-2 leading-snug font-heading">{b.title}</h4>
               <p className="text-xs text-muted-foreground leading-relaxed">{b.desc}</p>
             </div>
           </div>
