@@ -52,7 +52,8 @@ export default {
       },
       fontFamily: {
         display: ['"Bebas Neue"', 'sans-serif'],
-        body: ['"Space Grotesk"', 'sans-serif'],
+        heading: ['"Syne"', 'sans-serif'],
+        body: ['"Outfit"', 'sans-serif'],
       },
       borderRadius: {
         lg: "var(--radius)",
