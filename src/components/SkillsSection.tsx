@@ -3,10 +3,10 @@ import useReveal from "@/hooks/useReveal";
 const categories = [
   { icon: "🌐", title: "Frontend", skills: ["HTML5", "CSS3", "JavaScript", "React.js", "Tailwind CSS"] },
   { icon: "⚙️", title: "Backend", skills: ["Node.js", "Express.js", "Python", "REST APIs"] },
-  { icon: "🏢", title: "ERP / SAP", skills: ["SAP ABAP", "SAP Fiori", "ERP Concepts", "SAP MM"] },
-  { icon: "🗄️", title: "Database", skills: ["MySQL", "MongoDB", "PostgreSQL", "Firebase"] },
+  { icon: "🏢", title: "ERP / SAP", skills: ["SAP Modules", "ERP Concepts", "SAP O2C"] },
+  { icon: "🗄️", title: "Database", skills: ["MySQL",  "PostgreSQL", ] },
   { icon: "🛠️", title: "Tools", skills: ["Git & GitHub", "VS Code", "Figma", "Postman"] },
-  { icon: "☁️", title: "Cloud & Others", skills: ["AWS Basics", "Docker", "Linux", "Agile"] },
+  
 ];
 
 const SkillsSection = () => {

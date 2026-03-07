@@ -12,11 +12,13 @@ const AboutSection = () => {
       <div ref={ref} className="reveal grid md:grid-cols-2 gap-12 md:gap-16 items-center max-w-[1000px] mx-auto">
         <div className="flex justify-center">
           <div className="w-52 h-52 md:w-64 md:h-64 rounded-full p-1" style={{ background: "linear-gradient(135deg, hsl(180,100%,42%), hsl(180,100%,19%))", boxShadow: "0 0 60px hsla(180,100%,42%,0.25)" }}>
-            <div className="w-full h-full rounded-full bg-card flex items-end justify-center overflow-hidden">
-              <svg viewBox="0 0 200 200" className="w-[72%]" fill="hsl(195,40%,20%)">
-                <circle cx="100" cy="70" r="40" />
-                <ellipse cx="100" cy="170" rx="65" ry="50" />
-              </svg>
+            {/* ✅ Real photo from public folder */}
+            <div className="w-full h-full rounded-full overflow-hidden">
+              <img
+                src="/Abt_section-img.jpeg"
+                alt="Madhumithra R"
+                className="w-full h-full object-cover object-top"
+              />
             </div>
           </div>
         </div>
