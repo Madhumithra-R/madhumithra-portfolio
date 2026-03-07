@@ -20,14 +20,14 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-[200] flex items-center justify-between px-6 md:px-[60px] py-5 bg-background/85 backdrop-blur-[14px] border-b border-border">
-      <span className="font-display text-3xl tracking-widest text-foreground">MM</span>
-      <div className="hidden md:flex gap-1.5">
+    <nav className="fixed top-0 left-0 right-0 z-[200] flex items-center justify-between px-8 md:px-16 py-4 bg-background/90 backdrop-blur-xl border-b border-border">
+      <span className="font-display text-3xl tracking-[3px] text-primary shrink-0 mr-12">MM</span>
+      <div className="hidden md:flex items-center gap-1">
         {sections.map((s) => (
           <a
             key={s}
             href={`#${s}`}
-            className={`text-xs font-medium tracking-[1.5px] uppercase px-3.5 py-1.5 rounded transition-colors ${
+            className={`font-body text-[0.7rem] font-semibold tracking-[2px] uppercase px-4 py-2 rounded transition-colors whitespace-nowrap ${
               active === s ? "text-primary border-b-2 border-primary" : "text-muted-foreground hover:text-primary"
             }`}
           >
