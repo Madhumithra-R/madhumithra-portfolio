@@ -1,6 +1,6 @@
 # 🌐 Madhumithra R — Portfolio
 
-> **Live Site:** [madhumithra-portfolio.vercel.app](https://madhumithra-portfolio.vercel.app)
+> **Live Site:** https://madhumithra-portfolio-ochre.vercel.app/
 
 A modern, responsive personal portfolio website built to showcase my journey as a Computer Science student passionate about Web Technologies and SAP/ERP Solutions.
 
