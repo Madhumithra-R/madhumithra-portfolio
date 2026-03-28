@@ -2,7 +2,7 @@ import useReveal from "@/hooks/useReveal";
 
 const HeroSection = () => {
   const ref = useReveal();
-
+  
   return (
     <section
       id="home"
