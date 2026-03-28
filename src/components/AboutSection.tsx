@@ -15,7 +15,7 @@ const AboutSection = () => {
             {/* ✅ Real photo from public folder */}
             <div className="w-full h-full rounded-full overflow-hidden">
               <img
-                src="/Abt_section-img.jpeg"
+                src="/L-img.jpeg"
                 alt="Madhumithra R"
                 className="w-full h-full object-cover object-top"
               />
