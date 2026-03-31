@@ -81,4 +81,3 @@ npm run build
 
 ---
 
-<p align="center">Built with ❤️ by <strong>Madhumithra R</strong> · 2025</p>
